@@ -129,6 +129,7 @@
                         variant="outlined"
                         label="Website"
                         append-icon="mdi-arrow-right"
+                        @click="openInNewTab(item.url)"
                       ></Button>
                     </div>
                   </div>
@@ -219,18 +220,19 @@ interface typeProjects {
   image: string;
   icon: string[];
   type: string;
+  url: string;
 }
 
 const tab = ref(null);
 const isScroll = ref(false);
 const dataAllProjects = reactive<typeProjects[]>([
-  { title: "", description: "", image: "", icon: [""], type: "" },
+  { title: "", description: "", image: "", icon: [""], type: "", url: "" },
 ]);
 const dataReactProjects = reactive<typeProjects[]>([
-  { title: "", description: "", image: "", icon: [""], type: "" },
+  { title: "", description: "", image: "", icon: [""], type: "", url: "" },
 ]);
 const dataVueProjects = reactive<typeProjects[]>([
-  { title: "", description: "", image: "", icon: [""], type: "" },
+  { title: "", description: "", image: "", icon: [""], type: "", url: "" },
 ]);
 
 const handleGetDataProjects = async () => {
@@ -286,6 +288,10 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener("scroll", doScroll);
 });
+
+const openInNewTab = (url: string) => {
+  window.open(url, "_blank", "noreferrer");
+};
 </script>
 
 <style lang="scss" scoped>
@@ -644,13 +650,14 @@ onUnmounted(() => {
                 margin-bottom: 5px;
               }
               &__desc {
-                font-size: 14px;
+                font-size: 15px;
                 line-height: 150%;
                 margin-bottom: 15px;
               }
               &__tools {
+                gap: 10px;
                 &__wrapper {
-                  gap: 5px;
+                  gap: 8px;
                 }
               }
             }
@@ -711,16 +718,16 @@ onUnmounted(() => {
                 font-size: 20px;
                 line-height: 26px;
               }
-              &__desc {
-                font-size: 13px;
-                line-height: 150%;
-                margin-bottom: 10px;
-              }
-              &__tools {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 10px;
-              }
+              // &__desc {
+              //   font-size: 15px;
+              //   line-height: 150%;
+              //   margin-bottom: 10px;
+              // }
+              // &__tools {
+              //   flex-direction: column;
+              //   align-items: flex-start;
+              //   gap: 10px;
+              // }
             }
 
             &:nth-child(even) {
