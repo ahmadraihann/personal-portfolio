@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Vonix",
+    "description": "Vonix is a secure platform to buying, selling, trading, and exchange cryptocurrency. We used Vue.js and Typescript for build user interface with Primevue as css framework. For unit testing, we used Jest framework.",
+    "image": "vonix.png",
+    "icon": ["vue.png", "primevue.png", "typescript.png", "jest.png"],
+    "type": "vue"
+  },
+  {
+    "title": "DSS Consulting",
+    "description": "Daya Sinergi Solusi Consulting (DSS) is an application for supports the accounting process used to record transactions and bookkeeping reports in order to support the efficiency and effectiveness. We used Vue.js and Javascript for build user interface with Vuetify as css framework.",
+    "image": "dss.png",
+    "icon": ["vue.png", "vuetify.png", "javascript.png"],
+    "type": "vue"
+  },
+  {
+    "title": "HRIS",
+    "description": "Human Resource Information System (HRIS) is an application used by Pulau Intan Lestari (PIL) Company. That application enables companies to store employee information, manage common HR functions, and execute critical HR activities such as processing payroll and administering benefits. Features of HRIS applications include Attendance, Payroll, Performance Management, Employee Benefits & Training Platform. We used React.js and Javascript for build user interface with Ant Design as css framework.",
+    "image": "hris.png",
+    "icon": ["react.png", "antd.png", "javascript.png"],
+    "type": "react"
+  },
+  {
+    "title": "Warroom PDIP",
+    "description": "Warroom is a platform used by Partai Demokrasi Indonesia Perjuangan (PDIP) party to manage the cadres. We used React.js and Javascript for build user interface with Ant Design as css framework.",
+    "image": "pdip.png",
+    "icon": ["react.png", "antd.png", "javascript.png"],
+    "type": "react"
+  }
+]
